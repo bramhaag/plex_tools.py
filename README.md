@@ -6,6 +6,19 @@
 
 ## Usage
 ```
-$ python3 plex_tools.py
+$ python3 plex_tools.py -h
 usage: plex_tools.py [-h] [--list] [--stats] [--sync] [--ignore IGNORE [IGNORE ...]] [-V] email password
+
+positional arguments:
+  email                 Email address
+  password              Password
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --list                List all your Plex servers
+  --stats               Return watch-time statistics
+  --sync                Sync watched content across all servers (excluding ignored servers)
+  --ignore IGNORE [IGNORE ...]
+                        List of servers to ignore
+  -V, --verbose         Enable verbose output
 ```
